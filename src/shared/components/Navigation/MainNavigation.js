@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import MainHeader from './MainHeader'
 import './MainNavigation.css'
-import SideDrawer from './SideDrawer'
+//import SideDrawer from './SideDrawer'
 import NavLinks from './NavLinks'
 
 export default function MainNavigation(props) {
