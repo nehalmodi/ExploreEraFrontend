@@ -19,7 +19,8 @@ export default function PlaceList(props) {
   return (
     <ul className="place-list">
       {props.items.map((place) => (
-        <PlaceItem
+            
+            <PlaceItem
           key={place.id}
           id={place.id}
           image={place.imageUrl}
@@ -29,6 +30,9 @@ export default function PlaceList(props) {
           creatorId={place.creator}
           coordinates={place.location}
         ></PlaceItem>
+        
+        
+        
       ))}
     </ul>
   );
