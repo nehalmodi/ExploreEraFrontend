@@ -8,6 +8,7 @@ const inputReducer = (state, action) => {
     case 'CHANGE':
       return {
         ...state,
+        isTouched: true,
         value: action.val,
         isValid: validate(action.val, action.validators)
       };
