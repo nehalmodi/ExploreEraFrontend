@@ -1,33 +1,37 @@
-import React from "react";
+import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
   Redirect,
-  Switch,
-} from "react-router-dom";
+  Switch
+} from 'react-router-dom';
 
-import NewPlace from "./places/pages/NewPlace";
-import UserPlaces from "./places/pages/UserPlaces";
-import MainNavigation from "./shared/components/Navigation/MainNavigation";
-import Users from "./user/pages/Users";
+import Users from './user/pages/Users';
+import NewPlace from './places/pages/NewPlace';
+import UserPlaces from './places/pages/UserPlaces';
+import UpdatePlace from './places/pages/UpdatePlace';
+import MainNavigation from './shared/components/Navigation/MainNavigation';
 
 const App = () => {
   return (
     <Router>
-      <MainNavigation></MainNavigation>
+      <MainNavigation />
       <main>
-      <Switch>
-        <Route path="/" exact>
-          <Users></Users>
-        </Route>
-        <Route path="/:userId/places" exact>
-          <UserPlaces></UserPlaces>
-        </Route>
-        <Route path="/places/new" exact>
-          <NewPlace></NewPlace>
-        </Route>
-        <Redirect to="/"></Redirect>
-      </Switch>
+        <Switch>
+          <Route path="/" exact>
+            <Users />
+          </Route>
+          <Route path="/:userId/places" exact>
+            <UserPlaces />
+          </Route>
+          <Route path="/places/new" exact>
+            <NewPlace />
+          </Route>
+          <Route path="/places/:placeId">
+            <UpdatePlace />
+          </Route>
+          <Redirect to="/" />
+        </Switch>
       </main>
     </Router>
   );
