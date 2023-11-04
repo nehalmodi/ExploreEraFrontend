@@ -78,6 +78,8 @@ const UpdatePlace = () => {
     setIsLoading(false);
   }, [setFormData, identifiedPlace]);
 
+  //true
+
   const placeUpdateSubmitHandler = event => {
     event.preventDefault();
     console.log(formState.inputs);
