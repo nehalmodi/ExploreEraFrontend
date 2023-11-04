@@ -78,7 +78,6 @@ const UpdatePlace = () => {
     setIsLoading(false);
   }, [setFormData, identifiedPlace]);
 
-  //true
 
   const placeUpdateSubmitHandler = event => {
     event.preventDefault();
@@ -114,7 +113,7 @@ const UpdatePlace = () => {
         errorText="Please enter a valid title."
         onInput={inputHandler}
         initialValue={formState.inputs.title.value}
-        initialValid={formState.inputs.title.isValid}
+        initialIsValid={formState.inputs.title.isValid}
       />
       <Input
         id="description"
@@ -124,7 +123,7 @@ const UpdatePlace = () => {
         errorText="Please enter a valid description (min. 5 characters)."
         onInput={inputHandler}
         initialValue={formState.inputs.description.value}
-        initialValid={formState.inputs.description.isValid}
+        initialIsValid={formState.inputs.description.isValid}
       />
       <Button type="submit" disabled={!formState.isValid}>
         UPDATE PLACE

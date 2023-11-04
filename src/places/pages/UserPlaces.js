@@ -21,7 +21,8 @@ const DUMMY_PLACES = [
     id: 'p2',
     title : 'Red Fort',
     description : "One of the most famous Fort/Monument in the world!",
-    imageUrl: "https://lh5.googleusercontent.com/p/AF1QipP30RzCqnP3XTQzR8Wd-Z-BLptI8eI4_YTQ653V=w408-h258-k-no",
+    imageUrl:
+     "https://lh5.googleusercontent.com/p/AF1QipP30RzCqnP3XTQzR8Wd-Z-BLptI8eI4_YTQ653V=w408-h258-k-no",
     address: "Netaji Subhash Marg, Lal Qila, Chandni Chowk, New Delhi, Delhi, 110006",
     location : {
       lat :28.6561592,
