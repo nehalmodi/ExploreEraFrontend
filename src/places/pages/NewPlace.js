@@ -9,7 +9,7 @@ import {
   VALIDATOR_MINLENGTH
 } from '../../shared/Util/validators';
 import './NewPlace.css';
-import UserPlaces from './UserPlaces';
+//import UserPlaces from './UserPlaces';
 
 
 
