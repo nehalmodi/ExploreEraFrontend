@@ -5,7 +5,7 @@ import Button from '../../shared/components/FormElements/Button';
 import {
   VALIDATOR_REQUIRE,
   VALIDATOR_MINLENGTH
-} from '../../shared/util/validators';
+} from '../../shared/Util/validators';
 import { useForm } from '../../shared/hooks/form-hook';
 import './PlaceForm.css';
 
@@ -30,7 +30,7 @@ const NewPlace = () => {
 
   const placeSubmitHandler = event => {
     event.preventDefault();
-    console.log(formState.inputs); // send this to the backend!
+    console.log(formState.inputs); // send this to the backend!!!
   };
 
   return (
