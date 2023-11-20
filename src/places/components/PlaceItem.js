@@ -33,7 +33,7 @@ const PlaceItem = props => {
     try {
       console.log(props.id)
       await sendRequest(
-        `http://localhost:5000/api/places/${props.id}`,
+        `https://exploreerabackendneahal.onrender.com/api/places/${props.id}`,
         'DELETE'
       );
       props.onDelete(props.id);
@@ -80,7 +80,7 @@ const PlaceItem = props => {
         <Card className="place-item__content">
           {isLoading && <LoadingSpinner asOverlay />}
           <div className="place-item__image">
-            <img src={`http://localhost:5000/${props.image}`} alt={props.title} />
+            <img src={`https://exploreerabackendneahal.onrender.com/${props.image}`} alt={props.title} />
           </div>
           <div className="place-item__info">
             <h2>{props.title}</h2>

@@ -54,7 +54,7 @@ const NewPlace = () => {
       
 
       await sendRequest(
-        "http://localhost:5000/api/places",
+        "https://exploreerabackendneahal.onrender.com/api/places",
         "POST",
         formData
       );
