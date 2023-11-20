@@ -8,7 +8,6 @@ const inputReducer = (state, action) => {
     case 'CHANGE':
       return {
         ...state,
-        isTouched: true,
         value: action.val,
         isValid: validate(action.val, action.validators)
       };
@@ -25,9 +24,9 @@ const inputReducer = (state, action) => {
 
 const Input = props => {
   const [inputState, dispatch] = useReducer(inputReducer, {
-    value: props.initialValue || "",
+    value: props.initialValue || '',
     isTouched: false,
-    isValid: props.initialIsValid || false
+    isValid: props.initialValid || false
   });
 
   const { id, onInput } = props;
